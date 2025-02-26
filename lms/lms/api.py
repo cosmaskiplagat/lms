@@ -23,8 +23,6 @@ from frappe.utils import (
 from lms.lms.utils import get_average_rating, get_lesson_count
 from xml.dom.minidom import parseString
 from lms.lms.doctype.course_lesson.course_lesson import save_progress
-from frappe.integrations.frappe_providers.frappecloud_billing import is_fc_site
-
 
 @frappe.whitelist()
 def autosave_section(section, code):
